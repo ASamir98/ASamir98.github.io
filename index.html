@@ -7,7 +7,6 @@
   <meta name="description" content="Abdelrahman Samir - Water Resources Engineer | Teaching Assistant at Cairo University | Groundwater Modeler | MSc Candidate" />
 
   <style>
-    /* ---------- THEME TOKENS ---------- */
     :root{
       --bg: #0b1220;
       --card: #0f1a2d;
@@ -29,7 +28,6 @@
       --shadow: 0 10px 24px rgba(2,6,23,.10);
     }
 
-    /* ---------- BASE ---------- */
     *{box-sizing:border-box}
     body{
       margin:0;
@@ -45,7 +43,6 @@
     a:hover{text-decoration:underline}
     .wrap{max-width:1020px; margin:0 auto; padding:22px 16px 60px}
 
-    /* ---------- HEADER ---------- */
     header{
       background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
       border:1px solid var(--line);
@@ -82,7 +79,6 @@
     .contact div{color:var(--muted)}
     .contact b{color:var(--text); font-weight:800}
 
-    /* ---------- BUTTONS ---------- */
     .actions{
       display:flex; gap:10px; flex-wrap:wrap;
       margin-top:10px;
@@ -108,7 +104,6 @@
       background: var(--chip);
     }
 
-    /* ---------- LAYOUT ---------- */
     .grid{
       display:grid;
       grid-template-columns: 1.55fr .85fr;
@@ -154,7 +149,6 @@
     .muted{color:var(--muted)}
     .small{font-size:13.5px}
 
-    /* ---------- CHIPS ---------- */
     .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px}
     .chip{
       background:var(--chip);
@@ -170,35 +164,6 @@
       text-decoration:none;
     }
 
-    /* ---------- PORTFOLIO ---------- */
-    .projects{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:12px;
-      margin-top:10px;
-    }
-    @media (max-width: 680px){
-      .projects{grid-template-columns:1fr}
-    }
-    .proj{
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:14px;
-      background: rgba(255,255,255,.03);
-    }
-    .proj h3{
-      margin:0 0 6px 0;
-      font-size:14.5px;
-      letter-spacing:.2px;
-    }
-    .proj .meta{
-      color:var(--muted);
-      font-size:13px;
-      margin-bottom:8px;
-    }
-    .proj p{margin:0 0 10px 0}
-    .proj .links{display:flex; flex-wrap:wrap; gap:8px}
-
     footer{
       margin-top:16px;
       color:var(--muted);
@@ -206,7 +171,7 @@
       text-align:center;
     }
 
-    /* ---------- MOBILE MICRO-IMPROVEMENTS ---------- */
+    /* Mobile improvements */
     @media (max-width: 520px){
       h1{font-size:26px}
       .avatar{width:92px; height:92px}
@@ -230,15 +195,8 @@
               <div class="subtitle">Water Resources Engineer | Teaching Assistant at Cairo University | Groundwater Modeler | MSc Candidate</div>
 
               <div class="actions">
-                <!-- Download CV button -->
-                <a class="btn btn-primary" href="CV.pdf" download>
-                  ⬇️ Download CV (PDF)
-                </a>
-
-                <!-- Theme toggle -->
-                <button id="themeToggle" class="btn" type="button" aria-label="Toggle dark/light mode">
-                  🌙 / ☀️ Theme
-                </button>
+                <a class="btn btn-primary" href="CV.pdf" download>⬇️ Download CV (PDF)</a>
+                <button id="themeToggle" class="btn" type="button" aria-label="Toggle dark/light mode">🌙 / ☀️ Theme</button>
               </div>
             </div>
           </div>
@@ -249,8 +207,6 @@
           <div><b>Phone:</b> (+20) 01153761144</div>
           <div><b>Address:</b> Haram, Giza (Egypt)</div>
           <div><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/abdelrahman-samir98" target="_blank" rel="noopener">abdelrahman-samir98</a></div>
-          <!-- Optional: Add GitHub link -->
-          <!-- <div><b>GitHub:</b> <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">YOUR-USERNAME</a></div> -->
         </div>
       </div>
     </header>
@@ -263,51 +219,15 @@
           Highly motivated Water Resources Engineer and Hydrogeologist with strong academic and professional experience in groundwater modeling,
           hydrogeological assessment, and infrastructure design. Currently a Teaching Assistant at Cairo University and an MSc researcher in Water and
           Environment Engineering (GPA 4.0/4.0), with research focused on fractured aquifers, groundwater–surface water interaction, and numerical modeling.
+          Demonstrated excellence in both teaching and applied research, delivering undergraduate instruction in hydraulics and irrigation, and contributing
+          to capacity-building programs for engineers through national and international initiatives.
         </p>
-
-        <h2 style="margin-top:18px;">Portfolio / Projects</h2>
-        <p class="muted small">Add links (reports, GitHub repos, posters, presentations). You can edit these cards anytime.</p>
-
-        <div class="projects">
-          <article class="proj">
-            <h3>DAMAC Lagoons — Groundwater Control Review (Dubai, UAE)</h3>
-            <div class="meta">May 2025 – Present · 3D geology · MODFLOW regional model</div>
-            <p class="small muted">Design review, 3D geological model, regional groundwater modelling, pump station updates and lowering networks.</p>
-            <div class="links">
-              <!-- Replace # with your real links -->
-              <a class="chip" href="#" target="_blank" rel="noopener">📄 Case Study</a>
-              <a class="chip" href="#" target="_blank" rel="noopener">🖥️ Slides</a>
-            </div>
-          </article>
-
-          <article class="proj">
-            <h3>KAIA South Terminal — Dewatering Design (Jeddah, KSA)</h3>
-            <div class="meta">Jun 2024 – Aug 2024 · 3D GW model · Design package</div>
-            <p class="small muted">Calibrated model, well system evaluation, drawings, specs, BoQ, and design report.</p>
-            <div class="links">
-              <a class="chip" href="#" target="_blank" rel="noopener">📄 Report</a>
-              <a class="chip" href="#" target="_blank" rel="noopener">🗺️ Figures</a>
-            </div>
-          </article>
-
-          <article class="proj">
-            <h3>Polluted Hotspots — MODFLOW + MT3D-MS (KSA)</h3>
-            <div class="meta">May 2024 – Jul 2024 · Transport modelling · Scenarios</div>
-            <p class="small muted">Simulated current/post-solution conditions and recommended remediation solutions.</p>
-            <div class="links">
-              <a class="chip" href="#" target="_blank" rel="noopener">📄 Summary</a>
-            </div>
-          </article>
-
-          <article class="proj">
-            <h3>Siwa Oasis Conveyance Path — HEC-RAS + Hydraulics (Egypt)</h3>
-            <div class="meta">Oct 2021 – Mar 2022 · Open channels · Pump stations</div>
-            <p class="small muted">Alignment optimization, hydraulic design, lifting station design, and 1D HEC-RAS modelling.</p>
-            <div class="links">
-              <a class="chip" href="#" target="_blank" rel="noopener">📄 Deliverables</a>
-            </div>
-          </article>
-        </div>
+        <p>
+          Professionally experienced in planning, analysis, and detailed design of groundwater control, dewatering, and subsurface drainage systems for
+          large-scale urban, coastal, and infrastructure projects across Egypt, KSA, and the UAE. Proven expertise in developing and calibrating numerical
+          groundwater models (MODFLOW, SEAWAT, MT3D-MS), conducting pumping test analysis, and integrating GIS, programming, and data analytics to support
+          evidence-based decision-making.
+        </p>
 
         <h2 style="margin-top:18px;">Work Experience</h2>
 
@@ -360,6 +280,50 @@
             <li>Instructor for advanced groundwater modelling training and DSS contributions.</li>
           </ul>
         </section>
+
+        <section class="item">
+          <div class="row">
+            <div>
+              <div class="role">Instructor</div>
+              <div class="org">Center of Excellence for Water (USAID-funded)</div>
+            </div>
+            <div class="date">Aug 2023 – Sep 2023</div>
+          </div>
+          <ul>
+            <li>Delivered sessions as an instructor for a Water Resources Engineering Workshop (Center of Excellence and USAID).</li>
+          </ul>
+        </section>
+
+        <h2 style="margin-top:18px;">Significant Projects</h2>
+
+        <section class="item">
+          <div class="row">
+            <div class="role">Design Review of the Groundwater Control System and Update of the Pump Station — DAMAC Lagoons (Dubai, UAE)</div>
+            <div class="date">May 2025 – Present</div>
+          </div>
+          <ul>
+            <li>Reviewing the designed groundwater control system.</li>
+            <li>Developing a 3D geological model for the study areas.</li>
+            <li>Developing a regional 3D numerical groundwater model for DAMAC study areas.</li>
+            <li>Updating the pump station design and designing groundwater lowering networks.</li>
+          </ul>
+        </section>
+
+        <section class="item">
+          <div class="row">
+            <div class="role">Study and Detailed Design for Groundwater Lowering Networks at Five Municipalities (KSA)</div>
+            <div class="date">Dec 2023 – Present</div>
+          </div>
+          <ul>
+            <li>Data collection from authorities and data gap filling through field work.</li>
+            <li>Groundwater/geotechnical reporting (levels, lithology, water quality).</li>
+            <li>Numerical groundwater model development using MODFLOW.</li>
+            <li>Alternatives evaluation and cost-benefit analysis for optimum selection.</li>
+            <li>Presentations/workshops for decision makers.</li>
+            <li>Detailed design packages: plans, profiles, typical details, reports, BoQ, specs, tender docs.</li>
+          </ul>
+        </section>
+
       </main>
 
       <!-- RIGHT COLUMN -->
@@ -415,6 +379,12 @@
           <div><b>English:</b> <span class="muted">Professional working proficiency</span></div>
           <div><b>French:</b> <span class="muted">Elementary proficiency</span></div>
         </section>
+
+        <h2 style="margin-top:18px;">Additional Activities</h2>
+        <section class="item">
+          <div class="role">Benaa Student Activity (Team Head)</div>
+          <p class="small muted">Helping with providing learning materials for undergraduate civil engineering students.</p>
+        </section>
       </aside>
     </div>
 
@@ -425,10 +395,9 @@
   </div>
 
   <script>
-    // Year
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // Theme toggle (persisted)
+    // Theme toggle (saved)
     const root = document.documentElement;
     const toggle = document.getElementById("themeToggle");
 
@@ -437,14 +406,9 @@
       localStorage.setItem("theme", theme);
     }
 
-    // Initialize theme
     const saved = localStorage.getItem("theme");
-    if(saved === "light" || saved === "dark"){
-      setTheme(saved);
-    } else {
-      // Default: dark
-      setTheme("dark");
-    }
+    if(saved === "light" || saved === "dark") setTheme(saved);
+    else setTheme("dark");
 
     toggle.addEventListener("click", () => {
       const current = root.getAttribute("data-theme");
@@ -453,4 +417,5 @@
   </script>
 </body>
 </html>
+
 
